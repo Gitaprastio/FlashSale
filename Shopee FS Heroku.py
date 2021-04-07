@@ -8,13 +8,12 @@ import datetime
 from selenium.webdriver.firefox.options import Options
 import locale
 
-
 #Input Configuration
 urlpage = 'https://shopee.co.id/flash_sale'
 locale.setlocale(locale.LC_ALL, 'en_US')
 tanggal = datetime.datetime
 print(date.today())
-SCROLL_PAUSE_TIME = 0.5
+SCROLL_PAUSE_TIME = 0.6
 optionss = Options()
 optionss.headless = True
 autoScheduler = True
@@ -31,7 +30,7 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
-
+#test
 #AutoScheduler on Progress
 if AutoTime == True:
     driver = webdriver.Chrome(options=optionss)
